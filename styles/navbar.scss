@@ -1,0 +1,122 @@
+@import "./variables.scss";
+.navbar {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 0;
+  background: transparent;
+  .nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav-brand {
+      display: flex;
+
+      img {
+        margin: auto 0;
+        width: 4rem;
+        color: $links;
+      }
+      a {
+        margin: auto 0;
+        font-size: 2.4rem;
+        color: $links;
+        font-weight: lighter;
+        letter-spacing: 0.1rem;
+      }
+    }
+    .nav-content {
+      margin: auto 0;
+
+      .nav-items {
+        margin: auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .nav-item {
+          text-transform: capitalize;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .nav-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 3rem;
+            font-size: 1.5rem;
+            color: $links;
+            font-weight: 400;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+              color: $darkblue;
+            }
+            .nav-icon {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/****************************** Mobile section ***********************/
+
+@media (max-width: 648px) {
+  .navbar {
+    padding: 1.6rem 0;
+    .nav-flex {
+      .nav-content {
+        .nav-items {
+          display: flex;
+          flex-direction: column;
+          list-style-type: none;
+          justify-content: flex-start;
+          padding-top: 5rem;
+          width: 100%;
+          height: 200%;
+          top: 7rem;
+          left: -100%;
+          opacity: 0;
+          position: absolute;
+          transition: all 0.5s ease-in-out;
+          &.active {
+            opacity: 1;
+            left: 0;
+            transition: all 0.5s ease-in-out;
+            background: #f5f5fc;
+            align-content: center;
+          }
+          .nav-item {
+            margin: 3rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .nav-link {
+              margin-left: 0;
+              font-size: 2.4rem;
+              .nav-icon {
+                font-size: 4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .menu-icon {
+      color: $darkblue;
+      margin-right: 2rem;
+      width: 4rem;
+      height: 4rem;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "./variables.scss";
+@import "navbar.scss";
+@import "./homepage.scss";
+.App {
+  min-height: 100vh;
+  background: #f5f5fc;
+}
+.container {
+  max-width: 1240px;
+  padding: 0 2rem;
+  width: 100%;
+  margin: auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,198 @@
+@import "./variables.scss";
+/*===================== layout styling =====================*/
+h1 {
+  text-transform: capitalize;
+  color: $links;
+  font-weight: 500;
+  margin: 0px 0px 2rem;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-size: 3rem;
+}
+h3 {
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+  color: rgb(85, 101, 117);
+  letter-spacing: 0.07em;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+p {
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  font-size: 2rem;
+  font-weight: 100;
+  margin: 0px 0px 2rem;
+  color: $links;
+}
+h4 {
+  margin: 0 0 1rem;
+  color: $links;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.margining {
+  margin-bottom: 4rem;
+}
+/*===================== hero section styling =====================*/
+
+.hero {
+  max-width: 60rem;
+  width: 100%;
+  margin: auto 0;
+  padding: 10rem 0;
+  .join-btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.6rem;
+    background: #1292ee;
+    transition: all 0.4s ease-in-out;
+    &:hover,
+    :focus {
+      background: #0065bb;
+    }
+    a {
+      font-size: 2rem;
+      color: white;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+}
+/*===================== posts styling =====================*/
+.post {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    width: 35%;
+    height: 100%;
+  }
+  .right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    border-radius: 0.6rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+.posts {
+  max-width: 1240px;
+  width: 100%;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  .posts-head {
+    hr {
+      opacity: 60%;
+      border-top: 1px solid $base;
+    }
+  }
+  .posts-content {
+    display: flex;
+    // justify-content: space-between;
+    gap: 4rem;
+    flex-direction: column;
+    width: 100%;
+    .col1 {
+      max-width: 100%;
+    }
+    .col2 {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.post-reverse {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  .left {
+    width: 35%;
+    height: 100%;
+  }
+  .right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*===================== posts styling mobile version =====================*/
+
+@media (max-width: 720px) {
+  h3 {
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+    color: rgb(85, 101, 117);
+    letter-spacing: 0.07em;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  h4 {
+    margin: 0 0 1rem;
+    color: $links;
+    letter-spacing: 0.001em;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  .post {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .left {
+      width: 30%;
+      height: 100%;
+    }
+    .right {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .post-reverse {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    .left {
+      width: 30%;
+      height: 100%;
+    }
+    .right {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .posts {
+    max-width: 1240px;
+    width: 100%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    .posts-content {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      width: 100%;
+      .col1 {
+        max-width: 100%;
+      }
+      .col2 {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
