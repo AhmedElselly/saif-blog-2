@@ -1,9 +1,11 @@
 // import App from 'next/app'
 import Navbar from '../components/Navbar';
-// import '../styles/_layout.scss';
+// import '../style.css';
+import '../styles/__layout.scss';
 import '../styles/homepage.scss';
 import '../styles/navbar.scss';
 import '../styles/variables.scss';
+
 
 function MyApp({ Component, pageProps }) {
   return (

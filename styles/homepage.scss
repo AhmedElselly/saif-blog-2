@@ -38,10 +38,14 @@ h4 {
 /*===================== hero section styling =====================*/
 
 .hero {
-  max-width: 60rem;
-  width: 100%;
-  margin: auto 0;
-  padding: 10rem 0;
+  background: #0065bb;
+    max-width: 70rem;
+    width: 100%;
+    margin: 4rem 0;
+    padding: 10rem 6rem;
+    border-radius: 1rem;
+    border: 1px solid #1292ee;
+    box-shadow: 0.1px 0.2px 20px 2px #1292ee;
   .join-btn {
     padding: 1rem 2rem;
     border: none;
