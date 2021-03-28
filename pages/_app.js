@@ -1,6 +1,6 @@
 // import App from 'next/app'
 import Navbar from '../components/Navbar';
-// import '../style.css';
+import '../styles/App.scss';
 import '../styles/__layout.scss';
 import '../styles/homepage.scss';
 import '../styles/navbar.scss';
@@ -9,8 +9,10 @@ import '../styles/variables.scss';
 
 function MyApp({ Component, pageProps }) {
   return (
-  	<div>
-  		<Navbar/>
+  	<div className='App'>
+  		<div className="navbarz">
+        <Navbar />
+      </div>
   		<Component {...pageProps} />
   	</div>
   )

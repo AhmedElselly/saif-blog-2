@@ -1,6 +1,6 @@
 @import "./variables.scss";
 .navbar {
-  margin: auto;
+  // margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,12 +16,12 @@
       img {
         margin: auto 0;
         width: 4rem;
-        color: $links;
+        color: $darkblue;
       }
       a {
         margin: auto 0;
-        font-size: 2.4rem;
-        color: $links;
+        font-size: 2.6rem;
+        color: $darkblue;
         font-weight: lighter;
         letter-spacing: 0.1rem;
       }
@@ -46,8 +46,8 @@
             justify-content: center;
             align-items: center;
             margin-left: 3rem;
-            font-size: 1.5rem;
-            color: $links;
+            font-size: 1.6rem;
+            color: $darkblue;
             font-weight: 400;
             transition: all 0.2s ease-in-out;
             &:hover {
@@ -68,7 +68,7 @@
 
 /****************************** Mobile section ***********************/
 
-@media (max-width: 648px) {
+@media (max-width: 720px) {
   .navbar {
     padding: 1.6rem 0;
     .nav-flex {

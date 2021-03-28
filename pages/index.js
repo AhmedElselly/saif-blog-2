@@ -2,9 +2,9 @@ import HomePage from '../components/HomePage';
 
 const Index = props => {
 	return(
-		<div>
-			<HomePage/>
-		</div>
+	  <div className="main-content container">
+        <HomePage />
+      </div>
 	)
 }
 

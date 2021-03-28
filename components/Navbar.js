@@ -22,30 +22,30 @@ function Navbar() {
             className={click ? "nav-items active" : "nav-items"}
             onClick={handleClick}
           >
-            <Link href='/join-us' className="nav-item" onClick={closeMobileMenu}>
-              <a className="nav-link">
+            <Link href='/join-us' onClick={closeMobileMenu}>
+              <li className="nav-item"><a className="nav-link">
                 JoinUs
-              </a>
+              </a></li>
             </Link>
             <Link href='/about' className="nav-item" onClick={closeMobileMenu}>
-              <a className="nav-link">
+              <li className="nav-item"><a className="nav-link">
                 about
-              </a>
+              </a></li>
             </Link>
             <Link href='/contact' className="nav-item" onClick={closeMobileMenu}>
-              <a className="nav-link">
+              <li className="nav-item"><a className="nav-link">
                 contact
-              </a>
+              </a></li>
             </Link>
             <Link href='/https://discord.gg/NRtaCtEQpe' className="nav-item" onClick={closeMobileMenu}>
-              <a className="nav-link">
+              <li className="nav-item"><a className="nav-link">
                 <DiscordIcon className="nav-icon" />
-              </a>
+              </a></li>
             </Link>
             <Link href="https://github.com/saifmohamedo" className="nav-item" onClick={closeMobileMenu}>
-              <a>
+              <li className="nav-item"><a>
                 <GitHubIcon className="nav-icon" />
-              </a>
+              </a></li>
             </Link>
           </ul>
         </div>

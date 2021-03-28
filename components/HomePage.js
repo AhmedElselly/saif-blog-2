@@ -19,7 +19,7 @@ function HomePage() {
 
       <div className="posts">
         <div className="posts-head">
-          <h1>community</h1>
+          <h1>community targets</h1>
         </div>
         <div className="posts-content">
           <div className="col1">

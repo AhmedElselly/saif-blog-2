@@ -5,14 +5,15 @@ h1 {
   color: $links;
   font-weight: 500;
   margin: 0px 0px 2rem;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: -0.01em;
   font-size: 3rem;
 }
 h3 {
   text-transform: uppercase;
   margin: 0 0 1rem;
-  color: rgb(85, 101, 117);
+  // color: rgb(85, 101, 117);
+  color: $darkblue;
   letter-spacing: 0.07em;
   font-weight: 700;
   font-size: 1.4rem;
@@ -39,26 +40,34 @@ h4 {
 
 .hero {
   background: #0065bb;
-    max-width: 70rem;
-    width: 100%;
-    margin: 4rem 0;
-    padding: 10rem 6rem;
-    border-radius: 1rem;
-    border: 1px solid #1292ee;
-    box-shadow: 0.1px 0.2px 20px 2px #1292ee;
+  h1,
+  p {
+    color: white;
+  }
+  max-width: 70rem;
+  width: 100%;
+  margin: 4rem 0;
+  padding: 10rem 6rem;
+  border-radius: 1rem;
+  border: 1px #1292ee solid;
+  box-shadow: 0.1px 0.2px 20px 2px #1292ee;
+
   .join-btn {
     padding: 1rem 2rem;
     border: none;
+    color: $darkblue;
     border-radius: 0.6rem;
-    background: #1292ee;
+    background: #fff;
     transition: all 0.4s ease-in-out;
-    &:hover,
-    :focus {
-      background: #0065bb;
+    &:hover {
+      a {
+        color: #fff;
+      }
+      background: $darkblue;
     }
     a {
       font-size: 2rem;
-      color: white;
+      color: $darkblue;
       transition: all 0.4s ease-in-out;
     }
   }
@@ -70,8 +79,7 @@ h4 {
   align-items: center;
   justify-content: space-between;
   .left {
-    width: 35%;
-    height: 100%;
+    width: 30%;
   }
   .right {
     width: 60%;
@@ -79,9 +87,7 @@ h4 {
     flex-direction: column;
   }
   img {
-    border-radius: 0.6rem;
     width: 100%;
-    margin-bottom: 1rem;
   }
 }
 .posts {
@@ -90,17 +96,20 @@ h4 {
   margin: auto 0;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
   .posts-head {
-    hr {
-      opacity: 60%;
-      border-top: 1px solid $base;
+    h1 {
+      text-align: center;
+      margin-top: 6rem;
+      letter-spacing: 0.2rem;
+      margin-bottom: 0;
+      font-size: 2.4rem;
+      font-weight: normal;
+      color: #0065bb;
+      text-transform: uppercase;
     }
   }
   .posts-content {
     display: flex;
-    // justify-content: space-between;
-    gap: 4rem;
     flex-direction: column;
     width: 100%;
     .col1 {
@@ -121,8 +130,7 @@ h4 {
   align-items: center;
   flex-direction: row-reverse;
   .left {
-    width: 35%;
-    height: 100%;
+    width: 30%;
   }
   .right {
     width: 60%;
@@ -148,16 +156,19 @@ h4 {
     font-weight: 700;
     font-size: 1.4rem;
   }
+  .hero {
+    padding: 5rem 1.6rem;
+  }
   .post {
     width: 100%;
     display: flex;
     justify-content: space-between;
     .left {
-      width: 30%;
+      width: 45%;
       height: 100%;
     }
     .right {
-      width: 60%;
+      width: 50%;
       display: flex;
       flex-direction: column;
     }
@@ -169,7 +180,7 @@ h4 {
     align-items: center;
     flex-direction: row-reverse;
     .left {
-      width: 30%;
+      width: 35%;
       height: 100%;
     }
     .right {

@@ -1,0 +1,12 @@
+@import "./styles/_layout";
+@import "./styles/variables.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  font-family: $font-family;
+}
