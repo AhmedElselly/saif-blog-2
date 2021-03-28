@@ -37,13 +37,13 @@ function Navbar() {
                 contact
               </a></li>
             </Link>
-            <Link href='/https://discord.gg/NRtaCtEQpe' className="nav-item" onClick={closeMobileMenu}>
+            <Link href='/https://discord.gg/NRtaCtEQpe' onClick={closeMobileMenu}>
               <li className="nav-item"><a className="nav-link">
                 <DiscordIcon className="nav-icon" />
               </a></li>
             </Link>
-            <Link href="https://github.com/saifmohamedo" className="nav-item" onClick={closeMobileMenu}>
-              <li className="nav-item"><a>
+            <Link href="https://github.com/saifmohamedo"  onClick={closeMobileMenu}>
+              <li className="nav-item"><a className='nav-link'>
                 <GitHubIcon className="nav-icon" />
               </a></li>
             </Link>
